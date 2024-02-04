@@ -1,0 +1,75 @@
+.container-s1{
+    max-width:1920px;
+    height: 898px;
+    margin: 0 auto;
+    background-color: #F1EFF0;
+    background: url(../../images/Photo.png), lightgray 50% / cover no-repeat, ;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .natural-food{
+        width: 530px;
+        margin-left: 260px;
+        h4{
+            @extend %myfonts2;
+            font-size: 36px;
+            color: #68A47F;
+        }
+        h2{
+            width: 530px;
+            @extend %myfonts;
+            color: #274C5B;
+            font-size: 70px;
+            font-weight: 800;
+            margin: 8px 0 23px 0;
+        }
+        .Explore{
+            width: 220px;
+            height: 79px;
+            padding: 28px 39px;
+            border-radius: 16px;
+            background: #EFD372;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            a{
+                @extend %myfonts;
+                color: #274C5B;
+                font-size: 20px;
+            }
+        }
+    }
+}
+.container-s2{
+    max-width: 1400px;
+    width: 100%;
+    margin: 145px auto 170px auto;
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    .left-box{
+        width: 682px;
+        height: 376px;
+        background: url(../images/Photo.jpg), lightgray 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+        h4{
+            @extend %myfonts2;
+            color: #FFF;
+            font-size: 36px;
+        }
+    }
+    .right-box{
+        width: 682px;
+        height: 376px;
+        background: url(../../images/Photo-2.jpg), lightgray 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+    }
+}

@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Yellowtail&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container-s1 .natural-food .Explore a, .container-s1 .natural-food h2, .container-header .cart P, .container-header form input, .container-header nav ul a, .container-header h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container-s2 .left-box h4, .container-s1 .natural-food h4 {
+  font-family: Yellowtail;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+body {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.container-header {
+  max-width: 1596px;
+  width: 100%;
+  margin: 69px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container-header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container-header h1 {
+  color: #274C5B;
+  font-size: 38px;
+  margin-left: 8px;
+}
+.container-header nav {
+  max-width: 564px;
+  width: 100%;
+}
+.container-header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container-header nav ul a {
+  color: #274C5B;
+  font-size: 20px;
+}
+.container-header .header-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 18px;
+}
+.container-header form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container-header form input {
+  width: 376px;
+  height: 66px;
+  border-radius: 36px;
+  background: #FAFAFA;
+  border: none;
+  padding: 0 70px 0 30px;
+  font-size: 20px;
+}
+.container-header form .glass {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #7EB693;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 6px;
+  position: absolute;
+  right: 6px;
+}
+.container-header .cart {
+  width: 159px;
+  height: 66px;
+  border-radius: 33px;
+  border: 1px solid #E0E0E0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 12px;
+}
+.container-header .cart div {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #274C5B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 6px;
+}
+.container-header .cart P {
+  color: #274C5B;
+  font-size: 18px;
+}
+
+.container-s1 {
+  max-width: 1920px;
+  height: 898px;
+  margin: 0 auto;
+  background-color: #F1EFF0;
+  background: url(../../images/Photo.png), lightgray 50%/cover no-repeat;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.container-s1 .natural-food {
+  width: 530px;
+  margin-left: 260px;
+}
+.container-s1 .natural-food h4 {
+  font-size: 36px;
+  color: #68A47F;
+}
+.container-s1 .natural-food h2 {
+  width: 530px;
+  color: #274C5B;
+  font-size: 70px;
+  font-weight: 800;
+  margin: 8px 0 23px 0;
+}
+.container-s1 .natural-food .Explore {
+  width: 220px;
+  height: 79px;
+  padding: 28px 39px;
+  border-radius: 16px;
+  background: #EFD372;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.container-s1 .natural-food .Explore a {
+  color: #274C5B;
+  font-size: 20px;
+}
+
+.container-s2 {
+  max-width: 1400px;
+  width: 100%;
+  margin: 145px auto 170px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 36px;
+}
+.container-s2 .left-box {
+  width: 682px;
+  height: 376px;
+  background: url(../images/Photo.jpg), lightgray 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+.container-s2 .left-box h4 {
+  color: #FFF;
+  font-size: 36px;
+}
+.container-s2 .right-box {
+  width: 682px;
+  height: 376px;
+  background: url(../../images/Photo-2.jpg), lightgray 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}/*# sourceMappingURL=global.css.map */
