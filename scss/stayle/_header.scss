@@ -64,7 +64,7 @@
              margin-left: 6px; 
              position: absolute; 
              right: 6px; 
-        }        
+        }      
     }
 
     .cart{
@@ -92,6 +92,27 @@
             font-size: 18px;
         }
     }
-
+    .fa-bars{
+        display: none;
+    } 
+    @media (max-width:1352px) {
+        nav{
+            display: none;
+        }
+        .fa-bars{
+            display: block;
+        }
+    } 
+    @media (max-width:840px) {
+        .input, .cart {
+            display: none;
+        }
+    }
  }
+ @media (max-width:1600px) {
+    .container-header{
+        width: 97%;
+    }
+    
+}
 

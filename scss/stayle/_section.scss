@@ -3,7 +3,7 @@
     height: 898px;
     margin: 0 auto;
     background-color: #F1EFF0;
-    background: url(../../images/Photo.png), lightgray 50% / cover no-repeat, ;
+    background: url(../images/Photo.png), #F1EFF0 50% / cover no-repeat, ;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-position: right;
@@ -11,15 +11,17 @@
     align-items: center;
     position: relative;
     .natural-food{
-        width: 530px;
-        margin-left: 260px;
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
         h4{
             @extend %myfonts2;
             font-size: 36px;
             color: #68A47F;
         }
         h2{
-            width: 530px;
+            max-width: 530px;
+            width: 100%;
             @extend %myfonts;
             color: #274C5B;
             font-size: 70px;
@@ -43,6 +45,46 @@
             }
         }
     }
+    @media (max-width:1440px) {
+        .natural-food{
+            width: 97%;
+        }
+    }
+    @media (max-width:1152px) {
+        .natural-food{
+            max-width: 530px;
+            width: 97%;
+            margin: 0 auto;
+        }
+    }
+    @media (max-width:768px) {
+        .natural-food{
+            width: 97%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .natural-food h2{
+            text-align: center;
+            font-size: 60px;
+        }
+    }
+    @media (max-width:520px) {
+        .natural-food{
+            width: 97%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .natural-food h2{
+            font-size: 35px;
+        }
+        .natural-food h4{
+            font-size: 27px;
+        }
+    }
 }
 .container-s2{
     max-width: 1400px;
@@ -52,24 +94,90 @@
     justify-content: center;
     gap: 36px;
     .left-box{
-        width: 682px;
+        max-width: 682px;
+        width: 100%;
         height: 376px;
         background: url(../images/Photo.jpg), lightgray 50%;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         border-radius: 30px;
-        h4{
-            @extend %myfonts2;
-            color: #FFF;
-            font-size: 36px;
+        div{
+            max-width: 277px;
+            width: 100%;
+            margin: 109px 0 0 55px;
+            h4{
+                @extend %myfonts2;
+                color: #FFF;
+                font-size: 36px;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+            h3{
+                @extend %myfonts;
+                color: #FFF;
+                font-size: 40px;
+                font-weight: 800;
+            }
         }
     }
     .right-box{
-        width: 682px;
+        max-width: 682px;
+        width: 100%;
         height: 376px;
-        background: url(../../images/Photo-2.jpg), lightgray 50%;
+        background: url(../images/Photo-2.jpg), lightgray 50%;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         border-radius: 30px;
+        div{
+            max-width: 277px;
+            width: 100%;
+            margin: 109px 0 0 55px;
+            h4{
+                @extend %myfonts2;
+                color: #7EB693;
+                font-size: 36px;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+            h3{
+                @extend %myfonts;
+                color: #274C5B;
+                font-size: 40px;
+                font-weight: 800;
+            }
+        }
+    }
+    @media (max-width:1440px) {
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width:520px) {
+        .left-box, .right-box {
+            width: 97%;
+        }
+        .left-box div{
+            margin: 109px auto 0 auto;
+        }
+        .right-box div{
+            margin: 109px auto 0 auto;
+        }
+    }
+}
+.container-s3{
+    max-width: 1920px;
+    height: 980px;
+    margin: 0 auto;
+    background-color: #F9F8F8;
+    .container-fruits{
+        // background-color: #F9F8F8;
+        background: url(../../images/photo-s3.png),  #F9F8F8 50% / cover no-repeat;
+        background-repeat: no-repeat;
+        width: 911px;
+        height: 867px;
+        margin: 87px 0 113px 100px;
     }
 }
