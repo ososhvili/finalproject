@@ -169,15 +169,277 @@
 }
 .container-s3{
     max-width: 1920px;
-    height: 980px;
+    width: 100%;
+    height: 1000px;
     margin: 0 auto;
     background-color: #F9F8F8;
+    display: flex;
     .container-fruits{
-        // background-color: #F9F8F8;
-        background: url(../../images/photo-s3.png),  #F9F8F8 50% / cover no-repeat;
-        background-repeat: no-repeat;
-        width: 911px;
-        height: 867px;
-        margin: 87px 0 113px 100px;
+        width: auto;
+        height: auto;
+        margin-top: 87px;      
+    }
+    .about-us{
+        width: 702px;
+        margin-top: 186px;
+        h4{
+            @extend %myfonts2;
+            color: #7EB693;
+            font-size: 36px;
+        }
+        h3{
+            @extend %myfonts;
+            color: #274C5B;
+            font-size: 50px;
+            font-weight: 800;
+            margin: 8px 0 14px 0;
+        }
+        p{
+            @extend %myfonts3;
+        }
+        h5{
+            @extend %myfonts;
+            color: #274C5B;
+            font-weight: 800;
+            font-size: 25px;
+        }
+        .top{
+            margin-top: 46px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 19px;
+            
+        }
+        .bottom{
+            display: flex;
+            align-items: center;
+            gap: 19px;
+        }
+        .text{
+        max-width: 444px;
+        width: 100%;
+        }
+        .asset{
+            width: 101px;
+            height: 101px;
+            border-radius: 20px;
+            background: #FFF;            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .shop{
+            width: 220px;
+            height: 79px;
+            margin-top: 46px;
+            padding: 28px 39px;
+            border-radius: 16px;
+            background: #274C5B;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            a{
+                @extend %myfonts;
+                color: #FFF;
+                font-size: 20px;
+            }
+        }
+    }
+    @media (max-width:1550px) {
+        .container-fruits{
+            img{
+                width: 99%;
+                height: 99%;
+            }
+        } 
+    }
+    @media (max-width:1152px) {
+        width: 97%;
+        height: 1600px;
+        align-items: center;
+        flex-direction: column-reverse;
+        .about-us{
+            margin: 0;
+        }
+        .container-fruits{
+            margin: 0;
+        }
+        
+        
+    }
+    @media (max-width:768px) {
+        .about-us{
+            max-width: 702px;
+            width: 100%;
+            h3{
+                font-size: 45px;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+            h5{
+                font-size: 20px;
+            }
+            .text p{
+                text-align: start;
+            }
+            .my-shop{
+                display: flex;
+                justify-content: space-around;
+            }
+            
+        }
+        .container-fruits{
+            margin: 0;
+        }
+        
+    }
+    @media (max-width:480px){
+       .about-us {
+        h3{
+            font-size: 32px;
+        }
+
+       }
+    }
+    
+}
+.container-s4{
+    display: flex;
+    max-width: 1400.961px;
+    width: 100%;
+    margin: 176px auto 200px auto;
+    flex-direction: column;
+    align-items: center;
+    .head{
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        h4{
+            @extend %myfonts2;
+            font-size: 36px;
+            color: #7EB693;
+        }
+        h2{
+            @extend %myfonts;
+            font-size: 50px;
+            font-weight: 800;
+            color: #274C5B;
+        }
+    }
+    .container-products{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        .product{
+            border-radius: 30px;
+            background-color: #F9F8F8;
+            .img{
+                width: 335.23px;
+                height: 324px;
+            }
+            .m1{
+                background: url(../images/Calabrese\ Broccoli.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+            }
+            .m2{
+                background: url(../images/Banana.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+            }
+            .m3{
+                background: url(../images/White\ Nuts.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+            }
+            .m4{
+                background: url(../images/Vegan\ Red\ Tomato.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+            }
+            .m5{
+                background: url(../images/Mung\ Bean.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+            }
+            .m6{
+                background: url(../images/Brown\ Hazelnut.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .m7{
+                background: url(../images/Eggs.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+            }
+            .m8{
+                background: url(../images/Zelco\ Suji\ Elaichi\ Rusk.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+            }
+            .category{
+                width: min-content;
+                border-radius: 8px;
+                background: #274C5B;
+                display: flex;
+                padding: 5px 12px 6px 12px;
+                justify-content: center;
+                align-items: center;
+                margin: 29px 0 13px 30px;
+                h5{
+                    @extend %myfonts3;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #FFF;
+                }
+            }
+            .product-bottom{
+                width: 279px;
+                margin: 2px auto 17px auto;
+                h5{
+                    @extend %myfonts;
+                    color: #274C5B;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                .product-bottom-cost{
+                    display: flex;
+                    align-items: center;
+                    .old-cost{
+                        @extend %myfonts3;
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #B8B8B8;
+                        text-decoration: line-through;
+                        text-decoration-thickness: 2px;
+                    }
+                    .new-cost{
+                        @extend %myfonts3;
+                        color: #274C5B;
+                        font-size: 18px;
+                        font-weight: 700;
+                        margin: 0 81px 0 7px;
+                    }
+                }
+            }
+        }
+    }
+    .shop{
+        width: 220px;
+        height: 79px;
+        margin-top: 122px;
+        padding: 28px 39px;
+        border-radius: 16px;
+        background: #274C5B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        a{
+            @extend %myfonts;
+            color: #FFF;
+            font-size: 20px;
+        }
     }
 }

@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 html,
 body,
 div,
@@ -143,18 +144,27 @@ a {
           box-sizing: border-box;
 }
 
-.container-s2 .right-box div h3, .container-s2 .left-box div h3, .container-s1 .natural-food .Explore a, .container-s1 .natural-food h2, .container-header .cart P, .container-header form input, .container-header nav ul a, .container-header h1 {
+.container-s4 .shop a, .container-s4 .container-products .product .product-bottom h5, .container-s4 .head h2, .container-s3 .about-us .shop a, .container-s3 .about-us h5, .container-s3 .about-us h3, .container-s2 .right-box div h3, .container-s2 .left-box div h3, .container-s1 .natural-food .Explore a, .container-s1 .natural-food h2, .container-header .cart P, .container-header form input, .container-header nav ul a, .container-header h1 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.container-s2 .right-box div h4, .container-s2 .left-box div h4, .container-s1 .natural-food h4 {
+.container-s4 .head h4, .container-s3 .about-us h4, .container-s2 .right-box div h4, .container-s2 .left-box div h4, .container-s1 .natural-food h4 {
   font-family: Yellowtail;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.container-s4 .container-products .product .product-bottom .product-bottom-cost .new-cost, .container-s4 .container-products .product .product-bottom .product-bottom-cost .old-cost, .container-s4 .container-products .product .category h5, .container-s3 .about-us p {
+  color: #525C60;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165.4%;
 }
 
 body {
@@ -251,6 +261,7 @@ body {
   margin-left: 6px;
   position: absolute;
   right: 6px;
+  border: none;
 }
 .container-header .cart {
   width: 159px;
@@ -513,14 +524,323 @@ body {
 
 .container-s3 {
   max-width: 1920px;
-  height: 980px;
+  width: 100%;
+  height: 1000px;
   margin: 0 auto;
   background-color: #F9F8F8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .container-s3 .container-fruits {
-  background: url(../../images/photo-s3.png), #F9F8F8 50%/cover no-repeat;
+  width: auto;
+  height: auto;
+  margin-top: 87px;
+}
+.container-s3 .about-us {
+  width: 702px;
+  margin-top: 186px;
+}
+.container-s3 .about-us h4 {
+  color: #7EB693;
+  font-size: 36px;
+}
+.container-s3 .about-us h3 {
+  color: #274C5B;
+  font-size: 50px;
+  font-weight: 800;
+  margin: 8px 0 14px 0;
+}
+.container-s3 .about-us h5 {
+  color: #274C5B;
+  font-weight: 800;
+  font-size: 25px;
+}
+.container-s3 .about-us .top {
+  margin-top: 46px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 19px;
+}
+.container-s3 .about-us .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 19px;
+}
+.container-s3 .about-us .text {
+  max-width: 444px;
+  width: 100%;
+}
+.container-s3 .about-us .asset {
+  width: 101px;
+  height: 101px;
+  border-radius: 20px;
+  background: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container-s3 .about-us .shop {
+  width: 220px;
+  height: 79px;
+  margin-top: 46px;
+  padding: 28px 39px;
+  border-radius: 16px;
+  background: #274C5B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.container-s3 .about-us .shop a {
+  color: #FFF;
+  font-size: 20px;
+}
+@media (max-width: 1550px) {
+  .container-s3 .container-fruits img {
+    width: 99%;
+    height: 99%;
+  }
+}
+@media (max-width: 1152px) {
+  .container-s3 {
+    width: 97%;
+    height: 1600px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container-s3 .about-us {
+    margin: 0;
+  }
+  .container-s3 .container-fruits {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .container-s3 .about-us {
+    max-width: 702px;
+    width: 100%;
+  }
+  .container-s3 .about-us h3 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .container-s3 .about-us p {
+    text-align: center;
+  }
+  .container-s3 .about-us h5 {
+    font-size: 20px;
+  }
+  .container-s3 .about-us .text p {
+    text-align: start;
+  }
+  .container-s3 .about-us .my-shop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .container-s3 .container-fruits {
+    margin: 0;
+  }
+}
+@media (max-width: 480px) {
+  .container-s3 .about-us h3 {
+    font-size: 32px;
+  }
+}
+
+.container-s4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1400.961px;
+  width: 100%;
+  margin: 176px auto 200px auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container-s4 .head {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.container-s4 .head h4 {
+  font-size: 36px;
+  color: #7EB693;
+}
+.container-s4 .head h2 {
+  font-size: 50px;
+  font-weight: 800;
+  color: #274C5B;
+}
+.container-s4 .container-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.container-s4 .container-products .product {
+  border-radius: 30px;
+  background-color: #F9F8F8;
+}
+.container-s4 .container-products .product .img {
+  width: 335.23px;
+  height: 324px;
+}
+.container-s4 .container-products .product .m1 {
+  background: url(../images/Calabrese\ Broccoli.png), #F9F8F8 50%/cover no-repeat;
+  background-blend-mode: multiply;
+}
+.container-s4 .container-products .product .m2 {
+  background: url(../images/Banana.png), #F9F8F8 50%/cover no-repeat;
+  background-blend-mode: multiply;
+}
+.container-s4 .container-products .product .m3 {
+  background: url(../images/White\ Nuts.png), #F9F8F8 50%/cover no-repeat;
+  background-blend-mode: multiply;
+}
+.container-s4 .container-products .product .m4 {
+  background: url(../images/Vegan\ Red\ Tomato.png), #F9F8F8 50%/cover no-repeat;
+  background-blend-mode: multiply;
+}
+.container-s4 .container-products .product .m5 {
+  background: url(../images/Mung\ Bean.png), #F9F8F8 50%/cover no-repeat;
+  background-blend-mode: multiply;
+}
+.container-s4 .container-products .product .m6 {
+  background: url(../images/Brown\ Hazelnut.png), #F9F8F8 50%/cover no-repeat;
+  background-blend-mode: multiply;
   background-repeat: no-repeat;
-  width: 911px;
-  height: 867px;
-  margin: 87px 0 113px 100px;
+  background-position: center;
+}
+.container-s4 .container-products .product .m7 {
+  background: url(../images/Eggs.png), #F9F8F8 50%/cover no-repeat;
+  background-blend-mode: multiply;
+}
+.container-s4 .container-products .product .m8 {
+  background: url(../images/Zelco\ Suji\ Elaichi\ Rusk.png), #F9F8F8 50%/cover no-repeat;
+  background-blend-mode: multiply;
+}
+.container-s4 .container-products .product .category {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  border-radius: 8px;
+  background: #274C5B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 12px 6px 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 29px 0 13px 30px;
+}
+.container-s4 .container-products .product .category h5 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #FFF;
+}
+.container-s4 .container-products .product .product-bottom {
+  width: 279px;
+  margin: 2px auto 17px auto;
+}
+.container-s4 .container-products .product .product-bottom h5 {
+  color: #274C5B;
+  font-size: 20px;
+  font-weight: 600;
+}
+.container-s4 .container-products .product .product-bottom .product-bottom-cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container-s4 .container-products .product .product-bottom .product-bottom-cost .old-cost {
+  font-size: 15px;
+  font-weight: 600;
+  color: #B8B8B8;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+.container-s4 .container-products .product .product-bottom .product-bottom-cost .new-cost {
+  color: #274C5B;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 81px 0 7px;
+}
+.container-s4 .shop {
+  width: 220px;
+  height: 79px;
+  margin-top: 122px;
+  padding: 28px 39px;
+  border-radius: 16px;
+  background: #274C5B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.container-s4 .shop a {
+  color: #FFF;
+  font-size: 20px;
 }/*# sourceMappingURL=global.css.map */
