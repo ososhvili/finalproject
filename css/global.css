@@ -144,21 +144,21 @@ a {
           box-sizing: border-box;
 }
 
-.container-s4 .shop a, .container-s4 .container-products .product .product-bottom h5, .container-s4 .head h2, .container-s3 .about-us .shop a, .container-s3 .about-us h5, .container-s3 .about-us h3, .container-s2 .right-box div h3, .container-s2 .left-box div h3, .container-s1 .natural-food .Explore a, .container-s1 .natural-food h2, .container-header .cart P, .container-header form input, .container-header nav ul a, .container-header h1 {
+.container-s5 .content .Counters .Chart .chart-mid h5, .container-s5 .content h6, .container-s5 .content h2, .container-s4 .shop a, .container-s4 .container-products .product .product-bottom h5, .container-s4 .head h2, .container-s3 .about-us .shop a, .container-s3 .about-us h5, .container-s3 .about-us h3, .container-s2 .right-box div h3, .container-s2 .left-box div h3, .container-s1 .natural-food .Explore a, .container-s1 .natural-food h2, .container-header .cart P, .container-header form input, .container-header nav ul a, .container-header h1 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.container-s4 .head h4, .container-s3 .about-us h4, .container-s2 .right-box div h4, .container-s2 .left-box div h4, .container-s1 .natural-food h4 {
+.container-s5 .content h4, .container-s4 .head h4, .container-s3 .about-us h4, .container-s2 .right-box div h4, .container-s2 .left-box div h4, .container-s1 .natural-food h4 {
   font-family: Yellowtail;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.container-s4 .container-products .product .product-bottom .product-bottom-cost .new-cost, .container-s4 .container-products .product .product-bottom .product-bottom-cost .old-cost, .container-s4 .container-products .product .category h5, .container-s3 .about-us p {
+.container-s5 .content .Counters .Chart .chart-mid p, .container-s5 .content span, .container-s5 .content p, .container-s4 .container-products .product .product-bottom .product-bottom-cost .new-cost, .container-s4 .container-products .product .product-bottom .product-bottom-cost .old-cost, .container-s4 .container-products .product .category h5, .container-s3 .about-us p {
   color: #525C60;
   font-family: "Open Sans";
   font-size: 18px;
@@ -843,4 +843,129 @@ body {
 .container-s4 .shop a {
   color: #FFF;
   font-size: 20px;
+}
+
+.container-s5 {
+  max-width: 1920px;
+  width: 100%;
+  height: 1267px;
+  margin: 0 auto;
+  background-color: #FCFCFC;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container-s5 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container-s5 .content h4 {
+  color: #7EB693;
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+.container-s5 .content h2 {
+  color: #274C5B;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 60px;
+}
+.container-s5 .content .image-mid {
+  margin-bottom: 20px;
+}
+.container-s5 .content p {
+  color: #525C60;
+  font-size: 18px;
+  line-height: 165.4%;
+  width: 780px;
+  margin: 25px 0 20px 0;
+  text-align: center;
+}
+.container-s5 .content h6 {
+  color: #274C5B;
+  font-size: 25px;
+  font-weight: 600;
+}
+.container-s5 .content span {
+  color: #525C60;
+  font-size: 15px;
+  line-height: 165.4%;
+}
+.container-s5 .content .line {
+  width: 1108px;
+  height: 1px;
+  background: #E0E0E0;
+  margin: 102px 0 102px 0;
+}
+.container-s5 .content .Counters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1030px;
+  border-radius: 50%;
+}
+.container-s5 .content .Counters .Chart {
+  width: 211px;
+  height: 211px;
+  background-color: #7EB693;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container-s5 .content .Counters .Chart .chart-mid {
+  width: 203px;
+  height: 203px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 7px;
+  border-color: #FFF;
+  background-color: #F1F1F1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container-s5 .content .Counters .Chart .chart-mid h5 {
+  color: #274C5B;
+  font-size: 50px;
+  font-weight: 800;
+}
+.container-s5 .content .Counters .Chart .chart-mid p {
+  margin: 0;
+  color: #274C5B;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 165.4%;
 }/*# sourceMappingURL=global.css.map */
