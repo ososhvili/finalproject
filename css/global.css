@@ -266,7 +266,12 @@ body {
   right: 6px;
   border: none;
 }
-.container-header form .glass .fa-solid:hover {
+.container-header form .glass .fa-magnifying-glass {
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.container-header form .glass:hover .fa-magnifying-glass {
   color: #274C5B;
 }
 .container-header .cart {
@@ -301,17 +306,22 @@ body {
           align-items: center;
   margin-left: 6px;
 }
-.container-header .cart div i:hover {
-  background-color: #68A47F;
+.container-header .cart .fa-cart-shopping {
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .container-header .cart P {
   color: #274C5B;
   font-size: 18px;
 }
+.container-header .cart:hover .fa-cart-shopping {
+  color: #68A47F;
+}
 .container-header .fa-bars {
   display: none;
 }
-@media (max-width: 1352px) {
+@media (max-width: 1430px) {
   .container-header nav {
     display: none;
   }

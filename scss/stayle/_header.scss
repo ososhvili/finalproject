@@ -69,7 +69,13 @@
             position: absolute; 
             right: 6px;
             border: none;
-            .fa-solid:hover{
+            .fa-magnifying-glass{
+                color: #ffff;
+                transition: 0.3s;
+            }
+        }
+        .glass:hover{
+            .fa-magnifying-glass{
                 color: #274C5B;
             }
         }      
@@ -93,9 +99,10 @@
             justify-content: center;
             align-items: center;
             margin-left: 6px;
-            i:hover{
-                background-color:  #68A47F;
-            }
+        }
+        .fa-cart-shopping{
+            color: #ffff;
+            transition: 0.3s;  
         }
         P{
             @extend %myfonts;
@@ -103,10 +110,15 @@
             font-size: 18px;
         }
     }
+    .cart:hover{
+       .fa-cart-shopping{
+        color: #68A47F;        
+       } 
+    }
     .fa-bars{
         display: none;
     } 
-    @media (max-width:1352px) {
+    @media (max-width:1430px) {
         nav{
             display: none;
         }
