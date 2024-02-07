@@ -214,6 +214,9 @@ body {
   color: #274C5B;
   font-size: 20px;
 }
+.container-header nav ul a:hover {
+  color: #68A47F;
+}
 .container-header .header-search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -263,6 +266,9 @@ body {
   right: 6px;
   border: none;
 }
+.container-header form .glass .fa-solid:hover {
+  color: #274C5B;
+}
 .container-header .cart {
   width: 159px;
   height: 66px;
@@ -294,6 +300,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 6px;
+}
+.container-header .cart div i:hover {
+  background-color: #68A47F;
 }
 .container-header .cart P {
   color: #274C5B;
@@ -371,10 +380,16 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .container-s1 .natural-food .Explore a {
   color: #274C5B;
   font-size: 20px;
+}
+.container-s1 .natural-food .Explore:hover {
+  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 1440px) {
   .container-s1 .natural-food {
@@ -452,6 +467,8 @@ body {
   background-size: cover;
   background-position: center;
   border-radius: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .container-s2 .left-box div {
   max-width: 277px;
@@ -478,6 +495,8 @@ body {
   background-size: cover;
   background-position: center;
   border-radius: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .container-s2 .right-box div {
   max-width: 277px;
@@ -494,6 +513,14 @@ body {
   color: #274C5B;
   font-size: 40px;
   font-weight: 800;
+}
+.container-s2 .right-box:hover {
+  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.container-s2 .left-box:hover {
+  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 1440px) {
   .container-s2 {
@@ -612,10 +639,21 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .container-s3 .about-us .shop a {
   color: #FFF;
   font-size: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.container-s3 .about-us .shop:hover {
+  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.container-s3 .about-us .shop:hover a {
+  color: #7EB693;
 }
 @media (max-width: 1550px) {
   .container-s3 .container-fruits img {
@@ -733,6 +771,8 @@ body {
 .container-s4 .container-products .product {
   border-radius: 30px;
   background-color: #F9F8F8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .container-s4 .container-products .product .img {
   width: 335.23px;
@@ -825,6 +865,10 @@ body {
   font-weight: 700;
   margin: 0 81px 0 7px;
 }
+.container-s4 .container-products .product:hover {
+  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
 .container-s4 .shop {
   width: 220px;
   height: 79px;
@@ -842,10 +886,21 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .container-s4 .shop a {
   color: #FFF;
   font-size: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.container-s4 .shop:hover {
+  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.container-s4 .shop:hover a {
+  color: #7EB693;
 }
 @media (max-width: 1400px) {
   .container-s4 .m7-none, .container-s4 .m8-none {

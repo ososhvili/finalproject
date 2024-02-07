@@ -38,11 +38,15 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
+            transition: 0.3s;
             a{
                 @extend %myfonts;
                 color: #274C5B;
                 font-size: 20px;
             }
+        }
+        .Explore:hover{
+            box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
         }
     }
     @media (max-width:1440px) {
@@ -102,6 +106,7 @@
         background-size: cover;
         background-position: center;
         border-radius: 30px;
+        transition: 0.3s;
         div{
             max-width: 277px;
             width: 100%;
@@ -130,6 +135,7 @@
         background-size: cover;
         background-position: center;
         border-radius: 30px;
+        transition: 0.3s;
         div{
             max-width: 277px;
             width: 100%;
@@ -148,6 +154,12 @@
                 font-weight: 800;
             }
         }
+    }
+    .right-box:hover{
+        box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    }
+    .left-box:hover{
+        box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
     }
     @media (max-width:1440px) {
         width: 97%;
@@ -239,11 +251,19 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
+            transition: 0.3s;
             a{
                 @extend %myfonts;
                 color: #FFF;
                 font-size: 20px;
+                transition: 0.3s;
             }
+        }
+        .shop:hover{
+            a{
+                color: #7EB693;
+            }
+            box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
         }
     }
     @media (max-width:1550px) {
@@ -343,6 +363,7 @@
         .product{
             border-radius: 30px;
             background-color: #F9F8F8;
+            transition: 0.3s;
             .img{
                 width: 335.23px;
                 height: 324px;
@@ -427,6 +448,9 @@
                 }
             }
         }
+        .product:hover{
+            box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+        }
     }
     .shop{
         width: 220px;
@@ -439,11 +463,19 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
+        transition: 0.3s;
         a{
             @extend %myfonts;
             color: #FFF;
             font-size: 20px;
+            transition: 0.3s;
         }
+    }
+    .shop:hover{
+        a{
+            color: #7EB693;
+        }
+        box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
     }
     @media (max-width:1400px) {
         .m7-none, .m8-none{
