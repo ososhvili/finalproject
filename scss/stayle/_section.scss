@@ -4,7 +4,7 @@
     height: 898px;
     margin: 0 auto;
     background-color: #F1EFF0;
-    background: url(../images/Photo.png), #F1EFF0 50% / cover no-repeat, ;
+    background:url(../images/Background\ Patterns.svg), url(../images/Photo.png), #F1EFF0 50% / cover no-repeat, ;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-position: right;
@@ -12,13 +12,6 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    // .png{
-    //     width: 1920px;
-    //     height: 898px;
-    //     position: absolute;
-    //     background: url(../images/Background\ Patterns.svg)
-        
-    // }
     .natural-food{
         max-width: 1400px;
         width: 100%;
@@ -373,8 +366,9 @@
             border-radius: 30px;
             background-color: #F9F8F8;
             transition: 0.3s;
+            max-width: 335.23px;
+            width: 100%;
             .img{
-                width: 335.23px;
                 height: 324px;
             }
             .m1{
@@ -650,8 +644,7 @@
         display: flex;
         max-width: 1400.361px;
         width: 100%;
-        flex-direction: column;
-        align-items: center;
+       flex-direction: column;
         gap: 50px;
         .Content{
             max-width: 1400.361px;
@@ -696,18 +689,21 @@
         }
         .Content-2{
             display: flex;
+            justify-content: center;
             gap: 20px;
             .product{
                 border-radius: 30px;
                 background-color: #F9F8F8;
                 transition: 0.3s;
+                max-width: 335.23px;
+                width: 100%;
                 .img{
-                    width: 335.23px;
                     height: 324px;
                 }
                 .m2{
                     background: url(../images/21421421.png), #F9F8F8 50% / cover no-repeat;
                     background-blend-mode: multiply;
+                    background-position: center;
                  }
                  .m3{
                     background: url(../images/2312.png), #F9F8F8 50% / cover no-repeat;
@@ -915,7 +911,7 @@
     background: #F1F8F4;
     .Photo{
         max-width: 612px;
-        width: 97%;
+        width: 97%; 
         height: 612px;
         display: flex;
         justify-content: center;
@@ -954,5 +950,213 @@
     @media (max-width:1440px) {
         flex-direction: column;
         align-items: center;
+    }
+}
+.container-s9{
+    margin: 0 auto;
+    display: flex;
+    max-width: 1400.361px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    .heading{
+        display: inline-flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        .news{
+            display: flex;
+            max-width: 702px;
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            h4{
+                @extend %myfonts2;
+                font-size: 36px;
+                color: #7EB693;
+            }
+            h2{
+                @extend %myfonts;
+                font-size: 50px;
+                font-weight: 800;
+                color: #274C5B;
+            }
+        }
+        .shop{
+            width: 220px;
+            height: auto;
+            padding: 28px 39px;
+            border-radius: 16px;
+            border: 2px solid #274C5B;
+            background: #FFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: 0.3s;
+            a{
+                @extend %myfonts;
+                color: #274C5B;
+                font-size: 20px;
+                transition: 0.3s;
+            }
+        }
+        .shop:hover{
+            box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+        }
+    }
+    .cards{
+        margin-top: 45px;
+        display: flex;
+        gap: 46px;
+        margin-bottom: 200px;
+        .card{
+            max-width: 677px;
+            width: 100%;
+            max-height: 524px;
+            height: 100%;
+            position: relative;
+            .img{
+                max-width: 677px;
+                width: 100%;
+                max-height: 524px;
+                height: 100%;
+                border-radius: 30px;
+                overflow: hidden;
+            }
+            .calendar{
+                width: 82px;
+                height: 82px;
+                border-radius: 50%;
+                position: absolute;
+                background-color: #FFF;
+                top: 50px;
+                left: 40px;
+                span{
+                    position: absolute;
+                    @extend %myfonts;
+                    color: #274C5B;
+                    font-size: 25px;
+                    font-weight: 800;
+                    text-align: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            .text{
+                position: absolute;
+                bottom: -50px;
+                left: 40px;
+                right: 40px;
+                background: #FFF;
+                padding: 46px 57px 60px 57px;
+                border-radius: 30px;
+                box-shadow: 0px 20px 35px 0px rgba(167, 167, 167, 0.25);
+                .text-mid{
+                    max-width: 500px;
+                    width: 100%;
+                    .span{
+                        @extend %myfonts;
+                        color: #274C5B;
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                    .span::before{
+                        content: url(../images/Vector.svg);
+                        vertical-align: middle;
+                        margin-right: 8px;
+                    }
+                    h3{
+                    @extend %myfonts;
+                    margin-top: 15px;
+                    color: #274C5B;
+                    font-size: 25px;
+                    font-weight: 800; 
+                    }
+                    p{
+                        @extend %myfonts3;
+                        max-width: 444px;
+                        width: 100%;
+                    }
+                    .shop{
+                        width: 220px;
+                        height: auto;
+                        margin-top: 15px;
+                        padding: 28px 39px;
+                        border-radius: 16px;
+                        background:  #EFD372;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                        transition: 0.3s;
+                        a{
+                            @extend %myfonts;
+                            color: #274C5B;
+                            font-size: 20px;
+                            transition: 0.3s;
+                        }
+                    }
+                    .shop:hover{
+                        box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:1420px) {
+        align-items: center;
+        .heading{
+            flex-direction: column;
+            align-items: center;
+            width: 97%;
+            .news{
+                align-items: center;
+                h2{
+                    text-align: center;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        .cards{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    @media (max-width:680px) {
+        .heading{
+            .news{
+                h2{
+                    font-size: 35px;
+                }
+            }
+        }
+        .cards{
+            align-items: center;
+            width: 97%;
+            gap: 100px;
+            .card{
+                width: 97%;
+            }
+        }
+    }
+    @media (max-width:500px) {
+        .cards{
+            .card{
+                .text{
+                    left: 0;
+                    right: 0;
+                    padding: 46px 10px 60px 10px;
+                    .text-mid{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 }

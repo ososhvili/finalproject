@@ -1,0 +1,43 @@
+@mixin h4style{
+    @extend %myfonts2;
+    font-size: 36px;
+    color: #68A47F;
+}
+@mixin h2style{
+    @extend %myfonts;
+    color: #274C5B;
+    font-size: 50px;
+    font-weight: 800;
+}
+@mixin h3style{
+    @extend %myfonts;
+    color: #274C5B;
+    font-size: 25px;
+    font-weight: 800;
+}
+@mixin button{
+    .button{
+        width: 220px;
+        height: 79px;
+        padding: 28px 39px;
+        border-radius: 16px;
+        background: #274C5B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: 0.3s;
+        a{
+            @extend %myfonts;
+            color: #FFF;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+    }
+    .button:hover{
+        a{
+            color: #7EB693;
+        }
+        box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    }
+}
