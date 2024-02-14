@@ -4,7 +4,7 @@
     height: 450px;
     margin: 0 auto;
     position: relative;
-    background: url(../images/Background\ Patterns-about\ us.png) center no-repeat, url(../images/Photo\ about-s1-left.png) left no-repeat, url(../images/Photo\ about-s1-right.png) right no-repeat;
+    background: url(../images/Background\ Patterns-about\ us.png) center no-repeat, url(../../images/Image\ a-s1.png) center no-repeat, ;
     
     
     h1{
@@ -237,6 +237,13 @@
             }
         }
         @media (max-width:685px) {
+            .top{
+                .content{
+                    h2{
+                        font-size: 35px;
+                    }
+                }
+            }
             .top .img{
                 width: 97%;        
             }
@@ -244,56 +251,8 @@
                 width: 97%;  
             }
         }
-    
     } 
 }
-// .container-s4-about-us{
-//     max-width: 1400px;
-//     width: 100%;
-//     margin: 177px auto 200px auto;
-//     .head{
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         h4{
-//             @include h4style;
-//         }
-//         h2{
-//             @include h2style;
-//         }
-//         p{
-//             max-width: 852px;
-//             width: 100%;
-//             margin: 16px 0 42px 0;
-//             @extend %myfonts3;
-//             text-align: center;
-//         }
-//     }
-//     .cards{
-//         display: flex;
-//         gap: 27px;
-//         .card{
-//             max-width: 449px;
-//             width: 100%;
-//             max-height: 616px;
-//             // max-height: 100%;
-//             display: flex;
-//             flex-direction: column;
-//             align-items: center;
-//             .photo{
-//                 width: 100%;
-//                 height: 100%;
-//                 border-radius: 30px 30px 0px 0px;
-//             }
-//             .png{
-//                 max-width: 449px;
-//                 max-height: 130px;
-//                 width: 100%;
-//                 height: 100%;
-//             }
-//         }
-//     }
-// }
 .s-5{
     background-color: #274C5B;
     padding: 188px 0;
@@ -345,5 +304,53 @@
             }
         }
     }
+    @media (max-width:1400px) {
+        .container-s5-about-us .product .m4{
+            display: none;
+        }
+    }
+    @media (max-width:1050px) {
+        .container-s5-about-us .product .m3{
+            display: none;
+        }
+    }
+    @media (max-width:688px) {
+        .container-s5-about-us .product .m2{
+            display: none;
+        }
+    }
+    @media (max-width:520px) {
+        .container-s5-about-us .heading{
+            h2{
+                font-size: 35px;
+            }      
+        }
+    }
+    @media (max-width:380px) {
+        .container-s5-about-us{
+            .heading{
+                h2{
+                    font-size: 30px;
+                }
+                h4{
+                    font-size: 26px;
+                } 
+            }
+            .product{
+                .card{
+                    .image{
+                        max-width: 315px;
+                        width: 97%;
+                        max-height: 315px;
+                        height: 97%;
+                        img{
+                        width: 100%;
+                        }
+                    }
+                }
+            }     
+        }
+    }
+    
 }
 

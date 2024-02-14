@@ -144,7 +144,7 @@ a {
           box-sizing: border-box;
 }
 
-.s-5 .container-s5-about-us .product .card span, .s-5 .container-s5-about-us .heading h2, .s-3 .container-s3-about-us .cards .card h3, .s-3 .container-s3-about-us .top .content .heading h3, .s-3 .container-s3-about-us .top .content h2, .container-s2-about-us .content .my-button .button a, .container-s2-about-us .content .points h3, .container-s2-about-us .content .head h2, .container-s1-about-us h1, .container-footer .footer h3, .container-footer .footer .reverse .contact span, .container-footer .subscribe .email button, .container-footer .subscribe h3, .container-s9 .cards .card .text .text-mid .shop a, .container-s9 .cards .card .text .text-mid h3, .container-s9 .cards .card .text .text-mid .span, .container-s9 .cards .card .calendar span, .container-s9 .heading .shop a, .container-s9 .heading .news h2, .container-s8 .Photo .button a, .container-s7 .Content .Point h3, .container-s7 .Content .Heading h2, .container-s6 .Offer .Content-2 .product .product-bottom h5, .container-s6 .Offer .Content .Heading h2, .container-s6 .Offer .Content .shop a, .container-s5 .content .Counters .Chart .chart-mid h5, .container-s5 .content .name, .container-s5 .content h2, .container-s4 .shop a, .container-s4 .container-products .product .product-bottom h5, .container-s4 .head h2, .container-s3 .about-us .shop a, .container-s3 .about-us h5, .container-s3 .about-us h3, .container-s2 .right-box div h3, .container-s2 .left-box div h3, .container-s1 .natural-food .Explore a, .container-s1 .natural-food h2, .container-header .cart P, .container-header form input, .container-header nav ul a, .container-header h1 {
+.container-s1-quality h1, .s-5 .container-s5-about-us .product .card span, .s-5 .container-s5-about-us .heading h2, .s-3 .container-s3-about-us .cards .card h3, .s-3 .container-s3-about-us .top .content .heading h3, .s-3 .container-s3-about-us .top .content h2, .container-s2-about-us .content .my-button .button a, .container-s2-about-us .content .points h3, .container-s2-about-us .content .head h2, .container-s1-about-us h1, .container-footer .footer h3, .container-footer .footer .reverse .contact span, .container-footer .subscribe .email button, .container-footer .subscribe h3, .container-s9 .cards .card .text .text-mid .shop a, .container-s9 .cards .card .text .text-mid h3, .container-s9 .cards .card .text .text-mid .span, .container-s9 .cards .card .calendar span, .container-s9 .heading .shop a, .container-s9 .heading .news h2, .container-s8 .Photo .button a, .container-s7 .Content .Point h3, .container-s7 .Content .Heading h2, .container-s6 .Offer .Content-2 .product .product-bottom h5, .container-s6 .Offer .Content .Heading h2, .container-s6 .Offer .Content .shop a, .container-s5 .content .Counters .Chart .chart-mid h5, .container-s5 .content .name, .container-s5 .content h2, .container-s4 .shop a, .container-s4 .container-products .product .product-bottom h5, .container-s4 .head h2, .container-s3 .about-us .shop a, .container-s3 .about-us h5, .container-s3 .about-us h3, .container-s2 .right-box div h3, .container-s2 .left-box div h3, .container-s1 .natural-food .Explore a, .container-s1 .natural-food h2, .container-header .cart P, .container-header form input, .container-header nav ul a, .container-header h1 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -2051,7 +2051,7 @@ body {
   height: 450px;
   margin: 0 auto;
   position: relative;
-  background: url(../images/Background\ Patterns-about\ us.png) center no-repeat, url(../images/Photo\ about-s1-left.png) left no-repeat, url(../images/Photo\ about-s1-right.png) right no-repeat;
+  background: url(../images/Background\ Patterns-about\ us.png) center no-repeat, url(../../images/Image\ a-s1.png) center no-repeat;
 }
 .container-s1-about-us h1 {
   color: #274C5B;
@@ -2396,6 +2396,9 @@ body {
   }
 }
 @media (max-width: 685px) {
+  .s-3 .container-s3-about-us .top .content h2 {
+    font-size: 35px;
+  }
   .s-3 .container-s3-about-us .top .img {
     width: 97%;
   }
@@ -2475,4 +2478,80 @@ body {
   color: #FFF;
   font-weight: 500;
   margin-top: 21px;
+}
+@media (max-width: 1400px) {
+  .s-5 .container-s5-about-us .product .m4 {
+    display: none;
+  }
+}
+@media (max-width: 1050px) {
+  .s-5 .container-s5-about-us .product .m3 {
+    display: none;
+  }
+}
+@media (max-width: 688px) {
+  .s-5 .container-s5-about-us .product .m2 {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .s-5 .container-s5-about-us .heading h2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 380px) {
+  .s-5 .container-s5-about-us .heading h2 {
+    font-size: 30px;
+  }
+  .s-5 .container-s5-about-us .heading h4 {
+    font-size: 26px;
+  }
+  .s-5 .container-s5-about-us .product .card .image {
+    max-width: 315px;
+    width: 97%;
+    max-height: 315px;
+    height: 97%;
+  }
+  .s-5 .container-s5-about-us .product .card .image img {
+    width: 100%;
+  }
+}
+
+.container-s1-quality {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  height: 450px;
+  background: url(../images/Pattern\ g-s1.png) center no-repeat, url(../images/Photo\ g-s1-2.png) center;
+}
+.container-s1-quality h1 {
+  color: #274C5B;
+  font-size: 50px;
+  font-weight: 800;
+  font-size: 70px;
+}
+@media (max-width: 850px) {
+  .container-s1-quality h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .container-s1-quality h1 {
+    font-size: 35px;
+  }
+}
+
+.container-s2-quality {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
 }/*# sourceMappingURL=global.css.map */
