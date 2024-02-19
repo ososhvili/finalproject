@@ -4,7 +4,7 @@
     height: 450px;
     margin: 0 auto;
     position: relative;
-    background: url(../images/Background\ Patterns-about\ us.png) center no-repeat, url(../../images/Image\ a-s1.png) center no-repeat, ;
+    background: url(../images/Background\ Patterns-about\ us.png) center no-repeat, url(../images/Image\ a-s1.png) center no-repeat, ;
     
     
     h1{
@@ -17,6 +17,17 @@
         top: 50%;
         transform: translate(-50%, -50%);
     }
+    @media (max-width:850px) {
+        h1{
+            font-size: 50px;
+        }
+    }
+    @media (max-width:450px) {
+        h1{
+            font-size: 35px;
+        }
+    }
+    
 }
 .container-s2-about-us{
     max-width: 1920px;

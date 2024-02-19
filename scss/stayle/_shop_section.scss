@@ -1,0 +1,155 @@
+.container-s1-shop{
+    max-width: 1920px;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+    background: url(../images/Pattern\ s1_shop.png) center no-repeat, url(../images/Image_s1_shop.png) center no-repeat, ;
+    
+    
+    h1{
+        @extend %myfonts;
+        color: #274C5B;
+        font-size: 50px;
+        font-weight: 800;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @media (max-width:850px) {
+        h1{
+            font-size: 50px;
+        }
+    }
+    @media (max-width:450px) {
+        h1{
+            font-size: 35px;
+        }
+    }
+    
+}
+.cotainer_s2_shop{
+    max-width: 1400.961px;
+    width: 100%;
+    margin: 176px auto 200px auto;
+    .container-products{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        .product{
+            border-radius: 30px;
+            background-color: #F9F8F8;
+            transition: 0.3s;
+            max-width: 335.23px;
+            width: 100%;
+            .img{
+                height: 324px;
+            }
+            .m1{
+                background: url(../images/Calabrese\ Broccoli.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+            }
+            .m2{
+                background: url(../images/Banana.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+            }
+            .m3{
+                background: url(../images/White\ Nuts.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+            }
+            .m4{
+                background: url(../images/Vegan\ Red\ Tomato.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+            }
+            .m5{
+                background: url(../images/Mung\ Bean.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+            }
+            .m6{
+                background: url(../images/Brown\ Hazelnut.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .m7{
+                background: url(../images/Eggs.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+            }
+            .m8{
+                background: url(../images/Zelco\ Suji\ Elaichi\ Rusk.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+            }
+            .m9{
+                background: url(../images/Photo_1_shop.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+                background-position: center;
+            }
+            .m10{
+                background: url(../images/Photo_2_shop.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+                background-position: center;
+            }
+            .m11{
+                background: url(../images/Photo_3_shop.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+                background-position: center;
+            }
+            .m12{
+                background: url(../images/Photo_4_shop.png), #F9F8F8 50% / cover no-repeat;
+                background-blend-mode: multiply;
+                background-position: center;
+            }
+            .category{
+                width: min-content;
+                border-radius: 8px;
+                background: #274C5B;
+                display: flex;
+                padding: 5px 12px 6px 12px;
+                justify-content: center;
+                align-items: center;
+                margin: 29px 0 13px 30px;
+                h5{
+                    @extend %myfonts3;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #FFF;
+                }
+            }
+            .product-bottom{
+                width: 279px;
+                margin: 2px auto 17px auto;
+                h5{
+                    @extend %myfonts;
+                    color: #274C5B;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                .product-bottom-cost{
+                    display: flex;
+                    align-items: center;
+                    .old-cost{
+                        @extend %myfonts3;
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #B8B8B8;
+                        text-decoration: line-through;
+                        text-decoration-thickness: 2px;
+                    }
+                    .new-cost{
+                        @extend %myfonts3;
+                        color: #274C5B;
+                        font-size: 18px;
+                        font-weight: 700;
+                        margin: 0 81px 0 7px;
+                    }
+                }
+            }
+        }
+        .product:hover{
+            box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+        }
+    }
+}
